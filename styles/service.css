@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	
+}
+.backImg{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url(../images/image19.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.nav{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.nav .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+	text-decoration: none;
+}
+.nav .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+.nav.sticky .logo a span{
+    color: #fff;
+}
+.nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.nav ul li a{
+	font-weight: 120px;
+	text-decoration: none;
+	color: white;
+	text-transform:uppercase ;
+
+}
+.nav ul li::after
+{
+	content: '';
+	height: 3px;
+	width: 0;
+	background:#c70e27;
+	position: absolute;
+	left: 0;
+	bottom:-10px;
+	transition: 0.5s;
+}
+.nav ul li:hover::after
+{
+	width: 100%;
+}
+.title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.title h1{
+	color: white;
+	font-size: 90px;
+	font-family: sans-serif;
+
+}
+
+/*image section*/
+
+.container{
+
+	width: 1280px;
+	min-height: 500px;
+	background-color: rgb(189, 235, 236);
+	margin: 70px auto 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.container .box{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background: darkblue;
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.container .box .imagbox{
+	position: relative;
+	overflow: hidden;
+
+}
+
+.dining {
+	margin: 0;
+	padding: 0;
+	font-family: serif;
+	font-size: 15px;
+	color: black;
+	
+}
+
+.dining ul li{
+	color: black;
+}
+
+/* footer section */
+
+footer{
+	position: absolute;
+	top: 590%;
+	background: rgb(0, 8, 10);
+	padding: 15px 23px;
+	height: auto;
+	width: 100vw;
+	text-align: center;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: rgb(247, 244, 244);
+  
+  }
+
+  footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+  

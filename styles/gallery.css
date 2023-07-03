@@ -1,0 +1,267 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	
+}
+.backImg{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url(../images/image32.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.nav{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.nav .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+	text-decoration: none;
+}
+.nav .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+.nav.sticky .logo a span{
+    color: #fff;
+}
+.nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.nav ul li a{
+	font-weight: 120px;
+	text-decoration: none;
+	color: white;
+	text-transform:uppercase ;	
+
+}
+
+.nav ul li::after
+{
+	content: '';
+	height: 3px;
+	width: 0;
+	background:#c70e27;
+	position: absolute;
+	left: 0;
+	bottom:-10px;
+	transition: 0.5s;
+
+}
+.nav ul li:hover::after
+{
+	width: 100%;
+}
+
+.title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+
+.title h1{
+	color: white;
+	font-size: 90px;
+	font-family: sans-serif;
+}
+
+/*image section*/
+
+.room{
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+
+}
+
+.room__photo{
+	width: 250px;
+	height: 250px;
+	border-radius: 2px;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+	position: absolute;
+	z-index: 10;
+	outline-offset: 20px;
+	transition: all 0.2s;
+}
+
+.room__photo--6{
+	top: 0;
+	left: 0;
+}
+
+.room__photo--7{
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+.room__photo--8{
+	top: 40px;
+	right: 20%;
+}
+
+.room__photo--9{
+	top: 60px;
+	right: 40%;
+}
+
+.room__photo--10{
+	top: 40px;
+	right: 60%;
+	z-index: 2;
+}
+
+.room__photo--12{
+	top: 0;
+	left: 0;
+}
+
+.room__photo--13{
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+.room__photo--35{
+	top: 40px;
+	right: 20%;
+}
+
+.room__photo--19{
+	top: 60px;
+	right: 40%;
+}
+
+.room__photo--32{
+	top: 40px;
+	right: 60%;
+	z-index: 2;
+
+}
+
+.room__photo--18{
+	top: 0;
+	left: 0;
+}
+
+.room__photo--16{
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+.room__photo--5{
+	top: 40px;
+	right: 20%;
+}
+
+.room__photo--14{
+	top: 60px;
+	right: 40%;
+}
+
+.room__photo--33{
+	top: 40px;
+	right: 60%;
+	z-index: 2;
+
+}
+.room__photo--26{
+	top: 0;
+	left: 0;
+}
+
+.room__photo--27{
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+.room__photo--24{
+	top: 40px;
+	right: 20%;
+}
+
+.room__photo--20{
+	top: 60px;
+	right: 40%;
+}
+
+.room__photo--22{
+	top: 40px;
+	right: 60%;
+	z-index: 2;
+}
+
+.room__photo--40{
+	top: 0;
+	left: 0;
+}
+
+.room__photo--41{
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+.room__photo--42{
+	top: 40px;
+	right: 20%;
+}
+
+.room__photo--43{
+	top: 60px;
+	right: 40%;
+}
+
+.room__photo--44{
+	top: 40px;
+	right: 60%;
+	z-index: 2;
+
+}
+.room__photo:hover{
+	outline: 15px solid #14addc;
+	transform: scale(1.05) translateY(-20px);
+	z-index: 20;
+}
+
+.room:hover .room__photo:not(:hover){
+	transform: scale(0.9);
+}
+
+
+/* footer section */
+
+footer{
+	position: absolute;
+	
+	top: 400%;
+	background: rgb(0, 8, 10);
+	padding: 15px 23px;
+	height: auto;
+	width: 100vw;
+	text-align: center;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	
+	color: rgb(247, 244, 244);
+  
+  }
+
+  footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+  
